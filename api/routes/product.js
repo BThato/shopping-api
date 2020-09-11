@@ -1,5 +1,9 @@
  const express = require('express');
  const router = express.Router();
+ const Product = require('../models/Product');
+ const mongoose = require('mongoose');
+ 
+
 
  router.get('/', (req, res, next) => {
      res.status(200).json({ message: 'well this page runs to the products get method' });

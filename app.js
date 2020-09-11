@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://Nodeshop:' + process.env.MONGO_ATLAS_PW + '@node-rest-shoponline.f1y9e.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://Nodeshop:Nodeshop@node-rest-shoponline.f1y9e.mongodb.net/Nodeshop?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
