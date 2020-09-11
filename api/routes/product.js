@@ -9,10 +9,11 @@
 
  router.post('/', (req, res, next) => {
 
-     const product = {
+     const product = new Product({
+         _id: new mongoose.Types.ObjectId(),
          name: req.body.name,
          price: req.body.price
-     };
+     });
 
 
      res.status(200).json({
@@ -42,7 +43,7 @@
  });
 
 
- router.delete('/prodcutId', (req, res, next) => {
+ router.delete('/:prodcutId', (req, res, next) => {
      res.status(200).json({ message: 'have deleted very well' });
 
  });
